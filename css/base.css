@@ -1,0 +1,113 @@
+/* ============================================================
+   BASE STYLES — Reset, Typography, Global
+   ============================================================ */
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: var(--weight-regular);
+    line-height: var(--lh-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* ---- Selection ---- */
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+/* ---- Typography ---- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: var(--lh-heading);
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: var(--text-hero);
+    font-weight: var(--weight-extrabold);
+    line-height: var(--lh-hero);
+}
+
+h2 {
+    font-size: var(--text-section);
+    font-weight: var(--weight-bold);
+}
+
+h3 {
+    font-size: var(--text-card);
+    font-weight: var(--weight-semibold);
+}
+
+p {
+    color: var(--color-text-secondary);
+    line-height: var(--lh-body);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-fast);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* ---- Images ---- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---- Section Base ---- */
+.section {
+    padding: var(--section-padding) 0;
+    position: relative;
+}
+
+.section-dark {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.section-alt {
+    background-color: var(--color-bg-alt);
+}
+
+/* ---- Utility Classes ---- */
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-light {
+    color: var(--color-text-light);
+}
+
+/* Prevent body scroll when mobile menu or lightbox is open */
+body.no-scroll {
+    overflow: hidden;
+}

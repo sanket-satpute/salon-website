@@ -1,0 +1,495 @@
+/* ============================================================
+   RESPONSIVE — Tablet & Mobile Breakpoints
+   ============================================================ */
+
+/* ====================
+   TABLET (max-width: 1024px)
+   ==================== */
+@media (max-width: 1024px) {
+    :root {
+        --section-padding: 100px;
+        --text-hero: 56px;
+        --text-section: 40px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+
+    /* Navbar */
+    .nav-links {
+        display: none;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero-container {
+        gap: 40px;
+    }
+
+    .hero-image img {
+        max-width: 420px;
+        height: 480px;
+    }
+
+    /* Trending Styles */
+    .styles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Wedding */
+    .wedding-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #wedding-groom {
+        min-height: auto;
+    }
+
+    .wedding-image img {
+        max-height: 450px;
+    }
+
+    /* Transformation Wall */
+    .transform-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .transform-big {
+        grid-row: span 1;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Why Choose Us */
+    .why-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .why-image img {
+        height: 350px;
+    }
+
+    .why-content .section-heading {
+        text-align: center;
+    }
+
+    /* Studio */
+    .studio-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Membership */
+    .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-featured {
+        transform: scale(1);
+        grid-column: span 2;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .membership-featured:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Featured Story */
+    .story-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .story-image img {
+        height: 400px;
+    }
+
+    .story-content .section-heading {
+        text-align: center;
+    }
+
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-map {
+        height: 400px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+
+/* ====================
+   MOBILE (max-width: 768px)
+   ==================== */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 80px;
+        --text-hero: 40px;
+        --text-section: 32px;
+        --text-card: 20px;
+        --container-padding: 16px;
+    }
+
+    /* Mobile Call Button */
+    .mobile-call-btn {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: auto;
+        padding-top: calc(var(--navbar-height) + 20px);
+        padding-bottom: 40px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: var(--text-hero);
+    }
+
+    .hero-subheading {
+        font-size: 17px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+    }
+
+    .hero-trust-metrics {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .trust-item {
+        align-items: center;
+    }
+
+    .trust-number {
+        font-size: 24px;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: 350px;
+        border-radius: var(--radius-md);
+    }
+
+    .floating-card {
+        bottom: 16px;
+        right: 8px;
+        padding: 12px 16px;
+    }
+
+    /* Quick Info */
+    .quick-info-inner {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .quick-info-item {
+        font-size: 13px;
+    }
+
+    /* Trending Styles */
+    .styles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .style-card {
+        height: 350px;
+    }
+
+    /* Wedding */
+    .wedding-container {
+        gap: 32px;
+    }
+
+    .wedding-content .section-heading {
+        text-align: left;
+    }
+
+    /* Transformation Wall */
+    .transform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reviews */
+    .reviews-score {
+        font-size: 42px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 32px 24px;
+    }
+
+    /* Why Choose Us */
+    .why-image img {
+        height: 280px;
+    }
+
+    .why-content .section-heading {
+        text-align: left;
+    }
+
+    /* Studio */
+    .studio-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .studio-main-image img,
+    .studio-side-image img {
+        height: 250px;
+    }
+
+    /* Products */
+    .brands-track {
+        gap: 24px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .brand-divider {
+        display: none;
+    }
+
+    /* Membership */
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-featured {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .membership-card {
+        padding: 36px 24px;
+    }
+
+    /* Featured Story */
+    .story-image img {
+        height: 300px;
+    }
+
+    .story-quote {
+        font-size: 17px;
+    }
+
+    .story-content .section-heading {
+        text-align: left;
+    }
+
+    /* Instagram */
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Student Offer */
+    .student-banner {
+        padding: 40px 24px;
+        border-radius: var(--radius-md);
+    }
+
+    .student-heading {
+        font-size: 28px;
+    }
+
+    /* Team */
+    .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Gallery */
+    .gallery-masonry {
+        column-count: 2;
+        column-gap: 16px;
+    }
+
+    .gallery-item {
+        margin-bottom: 16px;
+    }
+
+    /* FAQ */
+    .faq-question {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    /* Final CTA */
+    .final-cta-heading {
+        font-size: 32px;
+    }
+
+    .final-cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .final-cta-buttons .btn-large {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact-map {
+        height: 300px;
+    }
+
+    .contact-details .section-heading {
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+        text-align: center;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    /* Section headers */
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-heading {
+        font-size: var(--text-section);
+    }
+
+    /* Lightbox */
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox-prev {
+        left: 12px;
+    }
+
+    .lightbox-next {
+        right: 12px;
+    }
+
+    .lightbox-close {
+        top: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ====================
+   SMALL MOBILE (max-width: 480px)
+   ==================== */
+@media (max-width: 480px) {
+    :root {
+        --text-hero: 34px;
+        --text-section: 28px;
+    }
+
+    .hero-trust-metrics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .quick-info-inner {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .brands-track {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+
+    .final-cta-trust {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .student-heading {
+        font-size: 24px;
+    }
+
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
